@@ -10,13 +10,13 @@ public class ensyuu3_3 {
 		Scanner stdIn = new Scanner(System.in);
 		
 		System.out.print("整数値：");
-		int n = stdIn.nextInt();
+		int integerValue = stdIn.nextInt();		//キーボードから整数値を入力してもらう、それをintegerValueに代入する
 		
-		if (n > 0) {
+		if (integerValue > 0) {					//入力した値が０より大きい場合、16行目の出力処理を行う
 			System.out.println("その値は正です。");
-		} else if (n < 0){
+		} else if (integerValue < 0){			//入力した値が０より小さい場合、18行目の出力処理を行う
 			System.out.println("その値は負です。");
-		} else if (n == 0){
+		} else if (integerValue == 0){			//入力した値が０と等しい場合、20行目の出力処理を行う
 			System.out.println("その値は０です。");
 		}
 	}

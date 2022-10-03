@@ -9,16 +9,18 @@ public class ensyuu3_4 {
 	public static void main (String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 		
-		System.out.print("整数値a：");
-		int a = stdIn.nextInt();
-		System.out.print("整数値b：");
-		int b = stdIn.nextInt();
+		//変数a,bは問題に指示有り
 		
-		if (a > b) {
+		System.out.print("整数値a：");
+		int a = stdIn.nextInt();	//キーボードから整数値を入力してもらう、それをaに代入する
+		System.out.print("整数値b：");
+		int b = stdIn.nextInt();	//キーボードから整数値を入力してもらう、それをbに代入する
+		
+		if (a > b) {		//もしaがbよりも大きい場合、20行目の出力処理を行う
 			System.out.println("aの方が大きいです。");
-		} else if (a < b){
+		} else if (a < b){	//もしaがbよりも小さい場合、22行目の出力処理を行う
 			System.out.println("bの方が大きいです。");
-		} else {
+		} else {			//19行目、21行目どちらでもなければaとbは同じ値として24行目の出力処理を行う
 			System.out.println("aとbは同じ値です。");
 		}
 	}

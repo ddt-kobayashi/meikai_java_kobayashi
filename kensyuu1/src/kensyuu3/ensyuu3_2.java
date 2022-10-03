@@ -8,13 +8,13 @@ public class ensyuu3_2 {
 		Scanner stdIn = new Scanner(System.in);
 		
 		System.out.print("整数値A：");
-		int a = stdIn.nextInt();
+		int integerA = stdIn.nextInt();			//キーボードから整数値を入力してもらう、それをintegerAに代入する
 		System.out.print("整数値B：");
-		int b = stdIn.nextInt();
+		int integerB = stdIn.nextInt();			//キーボードから整数値を入力してもらう、それをintegerBに代入する
 		
-		if ((a % b) == 0) {
+		if ((integerA % integerB) == 0) {		//integerAをintegerBで割ったあまりが０である場合、16行目の出力処理を行う
 			System.out.println("BはAの約数です。");
-		} else {
+		} else {								//15行目の条件通りでない場合、18行目の出力処理を行う
 			System.out.println("BはAの約数ではありません。");
 		}
 	}
