@@ -16,7 +16,7 @@ public class ensyuu3_11 {
 		
 		int difference = integerValueA > integerValueB ? (integerValueA - integerValueB) : (integerValueB - integerValueA);	//integerValueA > integerValueBを評価した値がtrueであるならば(integerValueA - integerValueB)を評価する。falseであるならば(integerValueB - integerValueA)を評価する
 		
-		if (difference > 10) {		//もしもdifferenceの値が11以上である場合は20行目、そうでない場合は22行目の出力処理を行う
+		if (difference > 10) {		//もしもdifferenceの値が11以上である場合は"それらの差は11以上です。"、そうでない場合は"それらの差は10以下です。"といった出力処理を行う
 			System.out.println("それらの差は11以上です。");
 		} else {
 			System.out.println("それらの差は10以下です。");

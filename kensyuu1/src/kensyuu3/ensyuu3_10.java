@@ -15,7 +15,7 @@ public class ensyuu3_10 {
 		double realValueB = stdIn.nextDouble();			//キーボードから値を入力してもらう、それをrealValueBに代入する
 		
 		double difference = realValueA > realValueB ? (realValueA - realValueB) : (realValueB - realValueA);	//realValueA > realValueBを評価した値がtrueであるならば(realValueA - realValueB)を評価する。falseであるならば(realValueB - realValueA)を評価する
-		System.out.println("値の差は" + difference + "です。");
+		System.out.println("値の差は" + difference + "です。");	//値の差を出力する
 		
 	}		
 }

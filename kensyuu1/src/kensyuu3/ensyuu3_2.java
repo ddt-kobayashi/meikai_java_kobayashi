@@ -12,9 +12,9 @@ public class ensyuu3_2 {
 		System.out.print("整数値B：");
 		int integerB = stdIn.nextInt();			//キーボードから整数値を入力してもらう、それをintegerBに代入する
 		
-		if ((integerA % integerB) == 0) {		//integerAをintegerBで割ったあまりが０である場合、16行目の出力処理を行う
+		if ((integerA % integerB) == 0) {		//integerAをintegerBで割ったあまりが０である場合、"BはAの約数です。"と表示する
 			System.out.println("BはAの約数です。");
-		} else {								//15行目の条件通りでない場合、18行目の出力処理を行う
+		} else {								//15行目の条件通りでない場合、"BはAの約数ではありません。"と表示する
 			System.out.println("BはAの約数ではありません。");
 		}
 	}

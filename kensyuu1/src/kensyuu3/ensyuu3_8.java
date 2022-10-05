@@ -13,15 +13,15 @@ public class ensyuu3_8 {
 		System.out.print("点数：");
 		int point = stdIn.nextInt();			//キーボードから点数を入力してもらう、それをpointに代入する
 		
-		if (point >= 0 && point <= 59) {				//もしも入力した値が0以上かつ59未満の場合、17行目の出力処理を行う
+		if (point >= 0 && point <= 59) {				//もしも入力した値が0以上かつ59未満の場合、"不可"と表示する
 			System.out.println("不可");		
-			} else if(point >= 60 && point <= 69){		//もしも入力した値が60以上かつ69未満の場合、19行目の出力処理を行う
+			} else if(point >= 60 && point <= 69){		//もしも入力した値が60以上かつ69未満の場合、"可"と表示する
 				System.out.println("可");
-			} else if(point >= 70 && point <= 79){		//もしも入力した値が70以上かつ79未満の場合、21行目の出力処理を行う
+			} else if(point >= 70 && point <= 79){		//もしも入力した値が70以上かつ79未満の場合、"良"と表示する
 				System.out.println("良");
-			} else if(point >= 80 && point <= 100){		//もしも入力した値が80以上かつ100未満の場合、23行目の出力処理を行う
+			} else if(point >= 80 && point <= 100){		//もしも入力した値が80以上かつ100未満の場合、"優"と表示する
 				System.out.println("優");
-		} else {									//もしも入力した値が0以上かつ100未満でない場合、25行目の処理を行う
+		} else {									//もしも入力した値が0以上かつ100未満でない場合、"望ましくない値が入力されました。"と表示する
 			System.out.println("望ましくない値が入力されました。");
 		}
 	}		
