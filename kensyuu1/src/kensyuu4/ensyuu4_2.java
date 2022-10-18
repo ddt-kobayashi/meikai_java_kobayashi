@@ -20,10 +20,11 @@ public class ensyuu4_2 {
 			System.out.println("いくつかな：");
 			number = stdIn.nextInt();		//プレイヤーが入力した数
 			
-			if(number > answer)			//入力した値が正解よりも大きい場合
+			if(number > answer) {			//入力した値が正解よりも大きい場合
 				System.out.println("もっと小さな数です");
-			else if(number < answer)	//入力した値が正解よりも小さい場合
+			}else if(number < answer) {	//入力した値が正解よりも小さい場合
 				System.out.println("もっと大きな数です");
+			}
 		} while (number != answer);		//不正解で有る限り繰り返す
 		
 		System.out.println("正解です");		//正解である場合、出力する
