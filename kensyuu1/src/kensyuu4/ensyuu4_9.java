@@ -21,7 +21,7 @@ public class ensyuu4_9 {
 		//int型の変数initialに１の値を代入する（１とする）
 		int initial = 1;
 		//valueNが0より上の整数である場合、initialの値を掛け続ける
-		while (valueN > 0) {
+		do {
 			product *= initial;
 			//initialの値がvalueNの値と同様になった際はそれまでで終了する
 			//1からn(valueN)までの積の値を求めたい為
@@ -31,7 +31,7 @@ public class ensyuu4_9 {
 			}
 			//initialの値がvalueNの値になるまでインクリメントさせて対応する
 			initial++;
-		}
+		} while (valueN > 0);
 		//処理結果として、1からnまでの積を出力する
 		System.out.print("１から" + valueN + "までの積は" + product + "です。");
 	}
