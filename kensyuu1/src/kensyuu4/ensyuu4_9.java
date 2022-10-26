@@ -25,7 +25,8 @@ public class ensyuu4_9 {
 			product *= initial;
 			//initialの値がvalueNの値と同様になった際はそれまでで終了する
 			//1からn(valueN)までの積の値を求めたい為
-			if (initial == valueN) {
+			//if(break)文を書く際は、==(同一オブジェクト)の処理は書かない※無限ループ発生の可能性がある為
+			if (initial >= valueN) {
 				break;
 			}
 			//initialの値がvalueNの値になるまでインクリメントさせて対応する

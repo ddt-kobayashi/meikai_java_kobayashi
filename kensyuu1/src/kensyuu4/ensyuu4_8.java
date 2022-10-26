@@ -16,17 +16,15 @@ public class ensyuu4_8 {
 			integer = stdIn.nextInt();
 		} while (integer <= 0);
 
-		//int型の変数digitにintegerの値を代入する
-		int digit = integer;
 		//処理回数を求めたい為、int型の変数countを定義
 		int count = 0;
-		//digitが0より上の整数である限り、10で割り続ける
+		//integerが0より上の整数である限り、10で割り続ける
 		//上記の条件が桁数を求める内容となる（繰り返し桁数を減らすイメージです）
 		//countは処理を行なった回数＝桁数とする為、インクリメントさせています。
 		do {
-			digit /= 10;
+			integer /= 10;
 			count++;
-		} while (digit > 0);
+		} while (integer > 0);
 		//処理結果として、桁数を出力する
 		System.out.print("その値は" + count + "桁です。");
 	}
