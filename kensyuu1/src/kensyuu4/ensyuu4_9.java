@@ -20,18 +20,14 @@ public class ensyuu4_9 {
 		int product = 1;
 		//int型の変数initialに１の値を代入する（１とする）
 		int initial = 1;
-		//valueNが0より上の整数である場合、initialの値を掛け続ける
+		//initialが入力値以下の整数である場合、initialの値を掛け続ける
+		//initialの値がvalueNの値と同様になった際はそれまでで終了する
+		//1からn(valueN)までの積の値を求めたい為
 		do {
 			product *= initial;
-			//initialの値がvalueNの値と同様になった際はそれまでで終了する
-			//1からn(valueN)までの積の値を求めたい為
-			//if(break)文を書く際は、==(同一オブジェクト)の処理は書かない※無限ループ発生の可能性がある為
-			if (initial >= valueN) {
-				break;
-			}
 			//initialの値がvalueNの値になるまでインクリメントさせて対応する
 			initial++;
-		} while (valueN > 0);
+		} while (initial <= valueN);
 		//処理結果として、1からnまでの積を出力する
 		System.out.print("１から" + valueN + "までの積は" + product + "です。");
 	}
