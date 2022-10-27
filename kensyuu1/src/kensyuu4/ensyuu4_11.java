@@ -10,7 +10,7 @@ public class ensyuu4_11 {
 		Scanner stdIn = new Scanner(System.in);
 
 		System.out.println("カウントダウンします。");
-		
+
 		int x;
 		//キーボードから値を入力してもらう、それをxに代入する
 		//正の整数値（０より上の値）を入力するまで繰り返し処理を行う
@@ -21,7 +21,7 @@ public class ensyuu4_11 {
 		} while (x <= 0);
 
 		//int型の変数initialの値は入力値として定義する（初期値）
-		//入力値の値が0以上である場合、＊の出力を行う（条件式）
+		//入力値の値が0以上である場合、カウントダウン処理を行う（条件式）
 		//initialは処理を行うたびにデクリメントする（変更式）
 		//上記の条件式と変更式が成立する度に繰り返しカウントダウン処理を行う
 		for (int initial = x; initial >= 0; initial--) {
