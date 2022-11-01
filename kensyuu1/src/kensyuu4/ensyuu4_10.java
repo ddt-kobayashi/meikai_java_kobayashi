@@ -23,9 +23,9 @@ public class ensyuu4_10 {
 		for (int i = 0; i < n; i++) {
 			System.out.print('*');
 
-			//もし、入力値の値が1より大きければ改行文字を出力する
+			//もし、入力値の値が1以上であれば改行文字を出力する
 			//もし、入力値の値が1未満であれば改行文字を出力しない
-			if (n > 1) {
+			if (n >= 1) {
 				System.out.println();
 			}
 		}
