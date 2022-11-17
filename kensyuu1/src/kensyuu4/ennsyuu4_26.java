@@ -1,13 +1,14 @@
 //合計だけでなく平均も求めるプログラムを作成
-//List4-17を流用
-//読み込んだ整数を加算（０が入力されたら終了）
+//List4-19を流用
+//読み込んだ整数を加算（負の値は加算しない）
 //今回の変数名は流用に従う
+//読み込んだ負の数は平均を求める際の分母から除外する
 
 package kensyuu4;
 
 import java.util.Scanner;
 
-public class ennsyuu4_25 {
+public class ennsyuu4_26 {
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 
@@ -24,17 +25,19 @@ public class ennsyuu4_25 {
 		//入力値の値がi以上である場合、整数値tを入力しそれらを合わせる処理を行う（条件式）
 		//iは処理を行うたびにインクリメントする（変更式）
 		for (int i = 0; i < n; i++) {
-			System.out.print("整数を加算します。");
+			System.out.print("整数:");
 			int t = stdIn.nextInt();
-			//もしも入力値tが0の場合は処理を中断する
-			if (t == 0) {
-				System.out.print("処理を中断します。");
-				break;
+			
+			//もしも０より下の値（負の値）を入力した際はtの値は実行せずループ処理を続ける
+			//※続けるというのはループ処理が末尾まで実行されることをさす（カウントされる）
+			if (t < 0) {
+				System.out.println("負の数は加算しません");
+				continue;
 			}
-
 			sum += t; //合計値に入力値を加える
 			count++; //平均値を求める為、処理回数をカウントする
 		}
+
 		//合計値をカウント（処理回数）で割った数を平均値（average）とする
 		double average = (sum / count);
 		System.out.println("合計は" + sum + "です。");
