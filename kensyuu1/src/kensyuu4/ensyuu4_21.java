@@ -11,7 +11,7 @@ public class ensyuu4_21 {
 
 		//キーボードから値を入力してもらう、それをnに代入する
 		Scanner stdIn = new Scanner(System.in);
-		System.out.println("左下直角の三角形を表示します。");
+		System.out.println("左上直角の三角形を表示します。");
 		System.out.print("段数は：");
 		int n = stdIn.nextInt();
 
