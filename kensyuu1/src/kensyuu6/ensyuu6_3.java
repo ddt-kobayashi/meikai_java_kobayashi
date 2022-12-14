@@ -11,10 +11,10 @@ public class ensyuu6_3 {
 		for (int algebra = 0; algebra < array.length; algebra++) {
 			int standard = algebra + 1;
 			//配列の中の元となる値を生成
-			double arrayValue = (standard * 11);
+			double arrayValue = (standard * 1.1);
 			//先頭から順に1.1、2.2、3.3、4.4、5.5を代入
 			//int型からdouble型へのキャスト演算子を利用
-			array[algebra] = (double) arrayValue / 10;
+			array[algebra] = (double) arrayValue;
 			//全要素の値を表示
 			System.out.println(array[algebra]);
 		}
