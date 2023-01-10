@@ -36,8 +36,10 @@ public class Ensyuu6_16 {
 		//aとbを格納する行列の値を１つずつ計算処理（aとbの積を求める）する
 		for (int line = 0; line < 4; line++) {
 			for (int column = 0; column < 4; column++) {
+				queueC[line][column] = 0;
+				//definitionは３つの要素数までを求めたい為、追加しました
 				for (int definition = 0; definition < 3; definition++) {
-					queueC[line][column] = queueA[column][definition] * queueB[definition][column];
+					queueC[line][column] += queueA[line][definition] * queueB[definition][column];
 				}
 			}
 		}
