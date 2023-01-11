@@ -14,14 +14,17 @@ public class Ensyuu7_2 {
 	//今回はメソッド名と変数名を同じ名前にしてみます
 	//メソッドと変数は種類が異なる為、衝突しないのを確認
 	static int min(int a, int b, int c) {
-		//はじめに変数aを最小値とする
+		//変数minは引数で指定された3つの整数の最小値を格納するために使用する変数
+		//仮の最小値として引数aを代入する。
 		int min = a;
 		//もし変数aよりbの方が低い場合はbを最小値とする
-		if (b < min)
+		if (b < min) {
 			min = b;
+		}
 		//もし変数aまたはbよりcの方が低い場合はcを最小値とする
-		if (c < min)
+		else if (c < min) {
 			min = c;
+		}
 		//呼び出したint型の値(min)を呼び出し元(min)に返却する
 		return min;
 	}

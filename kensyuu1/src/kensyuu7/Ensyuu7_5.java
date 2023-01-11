@@ -10,7 +10,7 @@ public class Ensyuu7_5 {
 	//③メソッドの本体は{}で囲む
 	static void hello() {
 		//こんにちは。と出力する
-		System.out.println("こんにちは");
+		System.out.println("こんにちは。");
 	}
 
 	//プログラムが実行されて起動するmainメソッドを作成

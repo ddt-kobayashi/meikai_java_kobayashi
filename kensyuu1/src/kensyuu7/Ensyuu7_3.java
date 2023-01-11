@@ -12,34 +12,34 @@ public class Ensyuu7_3 {
 	//③()内のint a,b,c,は仮引数(仮引数並び)
 	//④メソッドの本体は{}で囲む
 	static int med(int a, int b, int c) {
-		//もしaの値がb以上である場合
+		//もしaの値がbより大きい場合
 		if (a > b) {
-			//もしbの値がa以下c以上である場合(a > b > c)
+			//もしbの値がaより小さくcより大きい場合(a > b > c)
 			if (b > c) {
 				//呼び出したint型の値(b)を呼び出し元(med)に返却する
 				return b;
 			}
-			//もしaの値がb以上c以下である場合(c > a > b)
+			//もしaの値がbより大きくcより小さい場合(c > a > b)
 			else if (a < c) {
 				//呼び出したint型の値(a)を呼び出し元(med)に返却する
 				return a;
-				//もしcの値がb以上a以下である場合(a > c > c)
+				//もしcの値がbより大きくaより小さい場合(a > c > c)
 			} else {
 				//呼び出したint型の値(c)を呼び出し元(med)に返却する
 				return c;
 			}
 		}
-		//もしaの値がb以下cより大きい場合(b > a > c)
+		//もしaの値がbより小さくcより大きい場合(b > a > c)
 		else if (a > c) {
 			//呼び出したint型の値(a)を呼び出し元(med)に返却する
 			return a;
 		}
-		//もしcの値がb以下aより大きい場合(b > c > a)
+		//もしcの値がbより小さくaより大きい場合(b > c > a)
 		else if (b > c) {
 			//呼び出したint型の値(c)を呼び出し元(med)に返却する
 			return c;
 		}
-		//もしbの値がc以下aより大きい場合(c > b > a)
+		//もしbの値がcより小さくaより大きい場合(c > b > a)
 		else {
 			//呼び出したint型の値(b)を呼び出し元(med)に返却する
 			return b;

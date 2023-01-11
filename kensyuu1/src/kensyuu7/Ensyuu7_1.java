@@ -12,13 +12,15 @@ public class Ensyuu7_1 {
 	//③()内のint nは仮引数
 	//④メソッドの本体は{}で囲む
 	static int signOf(int n) {
+		//最小値を求めるために変数signを定義
+		//整数0入力した際は0のまま値を返す仕組みとなります。
 		int sign = 0;
 		//もし受け取ったint型の値nが負であれば-1を返却する
 		if (n < 0) {
 			sign = -1;
 		}
 		//もし受け取ったint型の値nが正であれば１を返却する
-		if (n > 0) {
+		else if (n > 0) {
 			sign = 1;
 		}
 		//呼び出したint型の値(sign)を呼び出し元(signOf)に返却する
