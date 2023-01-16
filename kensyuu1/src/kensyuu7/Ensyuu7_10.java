@@ -35,11 +35,10 @@ public class Ensyuu7_10 {
 		Random rand = new Random();
 		System.out.println("暗算力トレーニング！！");
 
-		//formulaはランダムな値を利用したい為、作成
-		//ランダムな０から３の値を生成し、formulaに代入する
-		int formula = rand.nextInt(4);
-
 		do {
+			//formulaはランダムな値を利用したい為、作成
+			//ランダムな０から３の値を生成し、formulaに代入する
+			int formula = rand.nextInt(4);
 			//100から999のランダムな値を生成
 			int x = rand.nextInt(900) + 100;
 			int y = rand.nextInt(900) + 100;
@@ -87,7 +86,7 @@ public class Ensyuu7_10 {
 				//続けるか問われる処理まで処理を抜ける
 				break;
 			//x - y - zの問題ケース
-			default:
+			case 3:
 				while (true) {
 					System.out.print(x + "-" + y + "-" + z + "=");
 					//答えを入力してもらう
@@ -100,7 +99,7 @@ public class Ensyuu7_10 {
 				//続けるか問われる処理まで処理を抜ける
 				break;
 			}
-			//呼び出したメソッドの値がtrueで有る限り処理が続く
+			//呼び出したメソッドの値がtrue()で有る限り処理が続く
 		} while (confirmRetry());
 	}
 }

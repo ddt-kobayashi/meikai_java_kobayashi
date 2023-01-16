@@ -12,10 +12,10 @@ public class Ensyuu7_6 {
 	//②printSeasonはメソッド名
 	//③()内のint nは仮引数
 	//④メソッドの本体は{}で囲む
-	static void printSeason(int n) {
+	static void printSeason(int m) {
 		//渡された引数の値によってそれぞれの季節を出力する
 		//break;はswitch文の処理が終了となる
-		switch (n) {
+		switch (m) {
 		//渡された引数の値が3,4,5の場合は春
 		case 3:
 		case 4:
