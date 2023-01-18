@@ -6,6 +6,11 @@ package kensyuu7;
 import java.util.Scanner;
 
 public class Ensyuu7_24 {
+	//配列aから要素a[idx]を削除した配列を返却するメソッドarrayyRmvOf
+	//①intは返却型
+	//②arrayyRmvOfはメソッド名
+	//③()内のint[] a, int idxは仮引数
+	//④メソッドの本体は{}で囲む
 	static int[] arrayyRmvOf(int[] a, int idx) {
 		//今回は入力してもらったインデックスの値をここで確認する
 		//0より小さく、配列の大きさ以上を要求された場合は、a配列をそのまま返す
@@ -37,11 +42,11 @@ public class Ensyuu7_24 {
 		System.out.print("要素数：");
 		int element = stdIn.nextInt();
 
-		//int型の配列変数aを作成
+		//int型の配列変数beforeを作成
 		//elementの値（要素数）だけ生成
 		int[] before = new int[element];
 
-		//各配列arrayの要素毎に値を代入する
+		//各配列beforeの要素毎に値を代入する
 		for (int i = 0; i < element; i++) {
 			System.out.print("before[" + i + "]:");
 			before[i] = stdIn.nextInt();
@@ -51,7 +56,7 @@ public class Ensyuu7_24 {
 		System.out.print("削除する要素のインデックス：");
 		int idx = stdIn.nextInt();
 
-		//一致する配列の値として配列変数deleatを作成
+		//一致する配列の値として配列変数afterを作成
 		//この際にarrayyRmvOfメソッドを呼び出し、配列変数arrayと変数idxを渡す
 		int[] after = arrayyRmvOf(before, idx);
 
